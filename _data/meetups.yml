@@ -1,0 +1,40 @@
+# Meetups
+# comment out the urls if you do not wish to display them
+
+- organization: Tour Ecommerce Valencia 2017
+  role: Participante
+  url: https://www.meetup.com/es-ES/Tour-Ecommerce-Valencia-2017/
+  summary: EcommerceTOUR Valencia es un evento sobre comercio electrónico para la zona del levante español, que celebrará su primera edición el próximo 2 de marzo en Valencia. Tendrá lugar en el Centro Cultural Bancaja con capacidad para más de 300 personas.
+
+- organization: GDG Valencia
+  role: Participant
+  url: https://www.meetup.com/es-ES/GDGValencia/
+  summary: El Google Developer Group Valencia es un grupo sin ánimo de lucro, formado por desarrolladores de Valencia que tienen el objetivo de aprender e intercambiar conocimientos y experiencias acerca de las tecnologías de Google.
+
+- organization: AWS Valencia
+  role: Participant
+  url: https://www.meetup.com/es-ES/AWS-Valencia/
+  summary: Este grupo esta dedicado a los entusiastas de las soluciones de Nube de Amazon Web Services.
+
+- organization: Magento Madrid
+  role: Participant
+  url: https://www.meetup.com/es-ES/MagentoMadrid/
+  summary: Magento y eCommerce son sinónimos para ti. Has visto tiendas Magento nacer, crecer y morir. Te conoces hasta las extensiones más hipster. Sabes qué impacto tiene modificar cualquier configuración por defecto en el resto de una tienda. Te gusta enseñar tus últimos desarrollos, diseños y trucos del oficio. Este es tu grupo.
+
+- organization: PHP Valencia
+  role: Participant
+  url: https://www.meetup.com/es-ES/PHP-Valencia/
+  summary: Grupo local de desarrolladores de PHP en Valencia.
+
+- organization: ValenciaJUG
+  role: Participant
+  url: https://www.meetup.com/es-ES/ValenciaJUG/
+  summary: Valencia Java User Group (JUG) focused in Java Virtual Machine (JVM) programming paradigms and languages.
+
+
+
+#- organization: Variant
+#  role: Member in Good Standing
+#  year: 1994 &mdash; Present
+#  url: http://website.org
+#  summary: Founding member of the local workers labor union.

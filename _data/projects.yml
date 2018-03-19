@@ -1,0 +1,9 @@
+# Projects
+# uncomment the urls if you wish to display them, and add your own URL
+
+# donutfinder.io
+- project: donutfinder.io
+  role: Founder & Primary Developer
+  duration: 2012 &mdash; Present
+  # url: "#"
+  description: Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.
