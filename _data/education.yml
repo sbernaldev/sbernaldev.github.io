@@ -2,7 +2,8 @@
 - degree: Web Applications development
   uni: Florida Universitaria
   year: 2017 &mdash; Present
-  award:
+  awards:
+    - award: Best DAW's integrated project 2018
   summary: PHP, Symfony, Javascript, jQuery, CSS, Bootstrap, XML, JSON, Git, Docker, Linux, Project management, KANBAN, SCRUM, UML, MYSQL
 
 - degree: Microsystems and networking
