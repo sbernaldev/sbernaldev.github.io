@@ -16,8 +16,8 @@ resume_contact_email:           "sergioguillot@gmail.com"
 resume_contact_telephone:       "+34 684 082 532"
 resume_contact_address:         "Valencia, Spain"
 #resume_header_contact_info:    ""
-resume_header_intro: "<p>This is my markdown resume. I was born in 1995. I used GitHub pages to host this static site. You might think that I'm a lazy guy but I tried to be optimal, lean and ingenious!</p>
-<p>I'm learning to develop Web Apps. I feel confortable developing in PHP but I like to code in JS as well! Could you hire me for your Reactive application? :)</p>"
+resume_header_intro: "<p>This is my markdown resume. I was born in 1995. I'm GitHub pages to host this static site. You might think that I'm a lazy guy but I tried to be optimal, lean and ingenious!</p>
+<p>I'm learning to develop Web Apps and completely focused in JS programming, but also used to develop in PHP. I want to focus my professional career into Node.js and Javascript.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -31,7 +31,7 @@ resume_section_experience:      true
 resume_section_education:       true
 resume_section_projects:        false
 resume_section_skills:          false
-resume_section_recognition:     false
+resume_section_recognition:     true
 resume_section_links:           true
 resume_section_meetups:    true
 # resume_section_interests:       true
