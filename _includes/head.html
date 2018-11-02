@@ -31,4 +31,18 @@
 
     gtag('config', 'UA-92891522-1');
   </script>
+  <script>
+    /**
+    * Función de Analytics que realiza un seguimiento de un clic en un enlace externo.
+    * Esta función toma una cadena de URL válida como argumento y la utiliza
+    * como la etiqueta del evento. Configurar el método de transporte como "beacon" permite que el hit se envíe
+    * con "navigator.sendBeacon" en el navegador que lo admita.
+    */
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {
+         'transport': 'beacon',
+         'hitCallback': function(){document.location = url;}
+       });
+    }
+  </script>
 </head>
