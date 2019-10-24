@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:title" content="Mi experiencia en Barissta" />
     <meta property="og:description" content="Qué hice en Barissta" />
-    <meta property="og:url" content="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1C4NAygfuml0wkpclbhXa9N5zcHgYmB69UFZcnjU73iM/export?format=pdf" />
+    <meta property="og:url" content="https://docs.google.com/document/d/1C4NAygfuml0wkpclbhXa9N5zcHgYmB69UFZcnjU73iM/export?format=pdf" />
     <meta property="og:image" content="https://www.muypymes.com/wp-content/uploads/2018/04/lanzadera-levanteemv-660x330.jpg" />
     <title>Redirección</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,12 +26,11 @@
         gtag('config', 'UA-92891522-1');
     </script>
     <script type="text/javascript">
-        function Redirect() {
-            const gdoc=`https://docs.google.com/document/d/1C4NAygfuml0wkpclbhXa9N5zcHgYmB69UFZcnjU73iM`
-            // window.location=`https://docs.google.com/viewer?url=${gdoc}/export?format=pdf`;
-            window.location=`${gdoc}/preview`;
+        function redirect() {
+            const gdoc = `https://docs.google.com/document/d/1C4NAygfuml0wkpclbhXa9N5zcHgYmB69UFZcnjU73iM`;
+            window.location = `${gdoc}/preview`;
         }
-        setTimeout('Redirect()', 500);
+        setTimeout('redirect()', 500);
      </script>
 </head>
 <body>
