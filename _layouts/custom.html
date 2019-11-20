@@ -4,6 +4,10 @@
   {% include head.html %}
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW7WLDG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <div class="wrapper" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
@@ -33,7 +37,7 @@
           {% include icon-links.html %}
         </div>
 
-        <div class="executive-summary no-print" itemprop="description">
+        <div class="executive-summary" itemprop="description">
           {{ site.resume_header_intro }}
         </div>
 
@@ -153,24 +157,24 @@
       <!-- end Recognition -->
       {% endif %}
 
-      {% if site.resume_section_associations %}
-      <!-- begin Associations -->
+      {% if site.resume_section_meetups %}
+      <!-- begin Meetups -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Associations</h2>
+          <h2>Meetups</h2>
         </header>
 
-        {% for association in site.data.associations %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
-          <p class="resume-item-copy">{{ association.summary }}</p>
+        {% for meetup in site.data.meetups %}
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="https://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{% if meetup.url %}<a href="{{ meetup.url }}">{{ meetup.organization }}</a>{% else %}{{ meetup.organization }}{% endif %}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ meetup.role }} &bull; {{ meetup.year }}</h4>
+          <p class="resume-item-copy">{{ meetup.summary }}</p>
         </div>
         {% endfor %}
 
       </section>
-      <!-- end Associations -->
+      <!-- end Meetups -->
       {% endif %}
 
       {% if site.resume_section_interests %}
@@ -213,6 +217,47 @@
       <!-- end Links -->
       {% endif %}
 
+      {% if site.resume_section_readings %}
+      <!-- begin Readings -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Readings</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for book in site.data.readings %}
+            <li>{{ book.title }} — {{ book.authors }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Readings -->
+      {% endif %}
+
+
+      {% if site.resume_section_people %}
+      <!-- begin People -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Awesome people in my career as developer!</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for person in site.data.people %}
+            <li><a href={{ person.url }} target="_blank" rel="external" itemprop="url">{{ person.who }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </section>
+      <!-- end People -->
+      {% endif %}
+
       {% if site.resume_print_social_links %}
       <!-- begin Print Social Links -->
       <section class="content-section print-only">
@@ -230,8 +275,6 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
       </footer>
 
     </div>

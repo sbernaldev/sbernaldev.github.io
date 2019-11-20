@@ -36,7 +36,7 @@
     text-align: center;
     letter-spacing: -.15rem;
     line-height: 1;
-    margin: 1rem 0 0;
+    margin: 1rem 0 2rem;
   }
 
   .header-contact-info {
@@ -48,8 +48,7 @@
   }
 
   .title-bar {
-    @include section_border;
-    margin-top: 2rem;
+    @include section-border;
     padding: .4rem 0;
     @include clearfix;
 
@@ -208,7 +207,6 @@
     }
   }
   .section-header {
-    @include section_border_thin;
     margin-bottom: 1rem;
     h2 { font-size: 1.2rem; line-height: 1.5rem; }
   }
